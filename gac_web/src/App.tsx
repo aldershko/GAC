@@ -1,9 +1,12 @@
 import React from "react";
+import Header from "./components/header";
+import HomePage from "./components/HomePage";
 
 const App = () => {
   return (
-    <div>
-      <span className="text-red-500 font-inter">APP</span>
+    <div className="min-h-screen font-poppins bg-white min-w-screen">
+      <Header />
+      <HomePage />
     </div>
   );
 };
