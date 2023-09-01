@@ -1,5 +1,3 @@
-import React from "react";
-
 const header = () => {
   return (
     <header className="w-full sticky top-0 items-center align-middle text-gray-700 bg-white border-gray-100 shadow-sm body-font">
