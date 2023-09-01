@@ -8,9 +8,11 @@ export default {
       },
       height: {
         128: "32rem",
+        611: "39rem",
       },
       width: {
         128: "32rem",
+        611: "39rem",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -21,7 +23,7 @@ export default {
         softGray: "#F8F9FA",
         stroke: "#DEE3E8",
         stoneGray: "#BDBCBD",
-        paraBlue: "#3B71FD",
+        paraBlue: "#015098",
         divider: "#e8e9eb",
         menuBg: "#FCFBFC",
         keepYellow: "#FEEFC3",

@@ -2,7 +2,7 @@ import React from "react";
 
 const header = () => {
   return (
-    <header className="w-full items-center align-middle text-gray-700 bg-white border-gray-100 shadow-sm body-font">
+    <header className="w-full sticky top-0 items-center align-middle text-gray-700 bg-white border-gray-100 shadow-sm body-font">
       <div className="container justify-between flex flex-col flex-wrap items-center py-5 mx-auto md:flex-row">
         <div className="flex align-middle justify-center items-center order-first font-medium text-gray-900  title-font ">
           <div className="pr-2 py-2">GAC</div>
