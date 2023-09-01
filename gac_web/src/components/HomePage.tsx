@@ -33,7 +33,7 @@ const HomePage = () => {
           <img src={home} alt="" />
         </div>
       </div>
-      <h1 className="text-red-500 text-center flex font-semibold text-3xl mt-10 tracking-wider justify-center items-center align-middle p-2 w-full">
+      <h1 className="text-gacRed text-center flex font-semibold text-3xl mt-10 tracking-wider justify-center items-center align-middle p-2 w-full">
         GAC ENTERPRISES : Consultancy with a Difference
       </h1>
     </div>
