@@ -19,7 +19,10 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        gacRed: "#CC0303",
+        gacRed: "#D90429",
+        gacGrey: "#EDF2F4",
+        gacWhite: "#FFFCFC",
+        gacBlue: "#2B2D42",
         ocean: "#EBEFF2",
         softGray: "#F8F9FA",
         stroke: "#DEE3E8",
