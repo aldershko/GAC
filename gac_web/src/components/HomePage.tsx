@@ -4,6 +4,7 @@ import calender from "../assets/calender.svg";
 import clients from "../assets/clients.svg";
 import globe from "../assets/globe.svg";
 import medal from "../assets/medal.svg";
+import Services from "./Services";
 
 const HomePage = () => {
   return (
@@ -40,9 +41,7 @@ const HomePage = () => {
           {/* img div */}
           {/* <div className="w-611 h-611"><img src={home} alt="" /></div> */}
         </div>
-        {/* <h1 className="text-gacRed text-center flex font-semibold text-3xl mt-10 tracking-wider justify-center items-center align-middle p-2 w-full">
-        GAC ENTERPRISES : Consultancy with a Difference
-      </h1> */}
+
         <div className="flex justify-center w-full h-128 items-center flex-row">
           <div className="p-5  h-128 flex justify-center items-center w-128 m-5">
             <img
@@ -112,6 +111,7 @@ const HomePage = () => {
             </button>
           </div>
         </div>
+        <Services />
       </div>
     </>
   );
