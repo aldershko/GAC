@@ -4,8 +4,8 @@ import calender from "../assets/calender.svg";
 import clients from "../assets/clients.svg";
 import globe from "../assets/globe.svg";
 import medal from "../assets/medal.svg";
-import Services from "./Services";
 import CardItem from "./CardItem";
+import ServiceCardItem from "./ServiceCardItem";
 
 export type ConsultantItemType = {
   id: number;
@@ -13,7 +13,54 @@ export type ConsultantItemType = {
   description: string;
 };
 
+export type ServicesItemType = {
+  id: number;
+  header: string;
+  description: string;
+};
+
 const HomePage = () => {
+  const ServicesList: ServicesItemType[] = [
+    {
+      id: 1,
+      header: "Quality Management System",
+      description:
+        "ISO 9001; ISO 17025; ISO 17020; TS 16949; ISO 13485; AS 9100; ISO 15189; ISO 17024",
+    },
+    {
+      id: 2,
+      header: "Environment and Occupational Health and Safety",
+      description:
+        "ISO 14001, ISO 45001, RC14001, IMS-Integrated management system",
+    },
+    {
+      id: 3,
+      header: "Laboratory And Hospitals And Testing Accreditation",
+      description: "ISO 17025",
+    },
+    {
+      id: 4,
+      header: "Information Security Related",
+      description: "ISO 27001, ISO 20000; CMMI",
+    },
+    {
+      id: 5,
+      header: "Asset Management",
+      description: "ISO 55000  ",
+    },
+    {
+      id: 6,
+      header: "Food Safety Management System",
+      description:
+        "ISO 22000; HACCP; BRC food; Fami-QS; FSSC 22000; Organic & Global GAP; Halal; Kausher  ",
+    },
+    {
+      id: 7,
+      header: "Social Accountability And Energy Management",
+      description: "SA 8000 , Sedex, ISO 50001",
+    },
+  ];
+
   const ConsultantList: ConsultantItemType[] = [
     {
       id: 1,
@@ -148,7 +195,26 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-        <Services />
+        {/* Services */}
+        <div className="mt-5 w-full p-5 bg-slate-200 items-center mb-10 flex flex-col">
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-gacRed">Services</span>
+            <h1 className="text-gacBlue text-2xl mb-5 font-semibold">
+              The Services We Provide
+            </h1>
+          </div>
+          <div className="flex flex-row">
+            {ServicesList.map((item) => {
+              return (
+                <ServiceCardItem
+                  key={item.id}
+                  header={item.header}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+        </div>
         <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
           <div className="flex flex-col justify-center items-center">
             <span className="text-gacRed">EXPERT CONSULTANTS</span>
