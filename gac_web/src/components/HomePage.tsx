@@ -196,14 +196,14 @@ const HomePage = () => {
           </div>
         </div>
         {/* Services */}
-        <div className="mt-5 w-full p-5 bg-slate-200 items-center mb-10 flex flex-col">
+        <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
           <div className="flex flex-col justify-center items-center">
             <span className="text-gacRed">Services</span>
             <h1 className="text-gacBlue text-2xl mb-5 font-semibold">
               The Services We Provide
             </h1>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-wrap m-5  justify-center overflow-x-auto flex-row">
             {ServicesList.map((item) => {
               return (
                 <ServiceCardItem
@@ -222,7 +222,7 @@ const HomePage = () => {
               Meet Out Top Consultants
             </h1>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row justify-center  overflow-x-auto">
             {ConsultantList.map((item) => {
               return (
                 <CardItem

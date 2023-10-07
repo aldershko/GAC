@@ -10,7 +10,7 @@ const ServiceCardItem = (props: ServiceCardItemPropsType) => {
   return (
     <>
       <div>
-        <div className="flex flex-row">
+        <div className="flex m-5 p-5 flex-row">
           <div className="h-60 group cursor-pointer w-64 flex bg-gacGrey mx-3 flex-col items-center justify-center shadow-xl hover:shadow-2xl active:bg-gacRed">
             <h1 className="py-3 px-3 mx-2 group-active:text-gacWhite text-base font-poppins font-semibold text-gacBlue flex items-center text-center">
               {header}
