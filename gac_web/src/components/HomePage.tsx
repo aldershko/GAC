@@ -10,33 +10,40 @@ import Consultants from "./Consultants";
 const HomePage = () => {
   return (
     <>
-      <div className="">
+      {/* <div className="">
         <img className="" src={background} alt="background_image" />
-      </div>
+      </div> */}
       <div className=" min-h-screen container  mt-16 mx-auto">
         <div className="flex justify-between">
           {/* content div */}
-          <div className="flex ml-60 mt-10  w-611 pl-10 py-10 font-bold tracking-widest leading-snug text-5xl flex-col justify-center align-middle">
-            <div>
+          <div className=" flex ml-60 mt-10 object-cover w-full pl-10 py-10 font-bold tracking-widest leading-snug text-5xl flex-col justify-center align-middle">
+            {/* <img
+              className="relative h-full w-full container "
+              src={background}
+              alt="background_image"
+            /> */}
+            <div className="">
+              <div>
+                <h1 className="text-gacRed flex flex-row">
+                  Innovate <p className="text-black">,</p> Integrate
+                </h1>
+              </div>
               <h1 className="text-gacRed flex flex-row">
-                Innovate <p className="text-black">,</p> Integrate
+                Elevate<p className="text-black">:</p>
               </h1>
-            </div>
-            <h1 className="text-gacRed flex flex-row">
-              Elevate<p className="text-black">:</p>
-            </h1>
-            <div className="flex mt-5 flex-col justify-between w-611">
-              <h1 className="text-black text-3xl w-full">
-                Your Path to International Standards.
-              </h1>
-              <h1 className="text-black mt-5 font-medium tracking-normal leading-normal text-lg">
-                Technical assistance for design , layout review of Food
-                Establishment's like Hotels , Catering Units , Manufacturing
-                Units and other organizations coming in food supply chain.
-              </h1>
-              <button className=" w-44 mt-10 p-4  bg-red-500 text-white text-base font-medium">
-                Contact Us
-              </button>
+              <div className="flex mt-5 flex-col justify-between w-611">
+                <h1 className="text-black text-3xl w-full">
+                  Your Path to International Standards.
+                </h1>
+                <h1 className="text-black mt-5 font-medium tracking-normal leading-normal text-lg">
+                  Technical assistance for design , layout review of Food
+                  Establishment's like Hotels , Catering Units , Manufacturing
+                  Units and other organizations coming in food supply chain.
+                </h1>
+                <button className=" w-44 mt-10 p-4  bg-red-500 text-white text-base font-medium">
+                  Contact Us
+                </button>
+              </div>
             </div>
           </div>
           {/* img div */}
