@@ -44,14 +44,14 @@ const HomePage = () => {
         GAC ENTERPRISES : Consultancy with a Difference
       </h1> */}
         <div className="flex justify-center w-full h-128 items-center flex-row">
-          <div className="p-5  h-96 w-128 m-5">
+          <div className="p-5  h-128 flex justify-center items-center w-128 m-5">
             <img
               src={closeup}
               alt="close up"
               className="object-cover h-96 w-full"
             />
           </div>
-          <div className="p-5 h-96 w-128 m-5 flex flex-col">
+          <div className="p-5 align-middle justify-center h-128 w-128 m-5 flex flex-col">
             <h1 className="text-gacRed text-base font-medium">ABOUT US</h1>
             <h1 className="text-gacBlue text-2xl font-semibold tracking-wider">
               We Provide Trusted & Best Consultancy
