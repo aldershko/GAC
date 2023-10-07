@@ -1,13 +1,42 @@
-import background from "../assets/businessman.jpg";
+//import background from "../assets/businessman.jpg";
 import closeup from "../assets/close-up-people-working-office.jpg";
 import calender from "../assets/calender.svg";
 import clients from "../assets/clients.svg";
 import globe from "../assets/globe.svg";
 import medal from "../assets/medal.svg";
 import Services from "./Services";
-import Consultants from "./Consultants";
+import CardItem from "./CardItem";
+
+export type ConsultantItemType = {
+  id: number;
+  header: string;
+  description: string;
+};
 
 const HomePage = () => {
+  const ConsultantList: ConsultantItemType[] = [
+    {
+      id: 1,
+      header: "Jessy Mathew",
+      description: "Founder & CEO",
+    },
+    {
+      id: 2,
+      header: "Jessy Mathew",
+      description: "Founder & CEO",
+    },
+    {
+      id: 3,
+      header: "Jessy Mathew",
+      description: "Founder & CEO",
+    },
+    {
+      id: 4,
+      header: "Jessy Mathew",
+      description: "Founder & CEO",
+    },
+  ];
+
   return (
     <>
       {/* <div className="">
@@ -120,7 +149,30 @@ const HomePage = () => {
           </div>
         </div>
         <Services />
-        <Consultants />
+        <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-gacRed">EXPERT CONSULTANTS</span>
+            <h1 className="text-gacBlue text-2xl mb-5 font-semibold">
+              Meet Out Top Consultants
+            </h1>
+          </div>
+          <div className="flex flex-row">
+            {ConsultantList.map((item) => {
+              return (
+                <CardItem
+                  key={item.id}
+                  header={item.header}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+          <div className="flex flex-row justify-center mt-5 items-center">
+            <button className="bg-gacBlue text-gacWhite px-5 py-3 mt-5">
+              See More
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
