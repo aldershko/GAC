@@ -5,6 +5,7 @@ import clients from "../assets/clients.svg";
 import globe from "../assets/globe.svg";
 import medal from "../assets/medal.svg";
 import Services from "./Services";
+import Consultants from "./Consultants";
 
 const HomePage = () => {
   return (
@@ -112,6 +113,7 @@ const HomePage = () => {
           </div>
         </div>
         <Services />
+        <Consultants />
       </div>
     </>
   );
