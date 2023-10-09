@@ -6,11 +6,14 @@ import globe from "../assets/globe.svg";
 import medal from "../assets/medal.svg";
 import CardItem from "./CardItem";
 import ServiceCardItem from "./ServiceCardItem";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export type ConsultantItemType = {
   id: number;
   header: string;
   description: string;
+  image?: string;
 };
 
 export type ServicesItemType = {
@@ -89,6 +92,7 @@ const HomePage = () => {
       {/* <div className="">
         <img className="" src={background} alt="background_image" />
       </div> */}
+      <Header />
       <div className=" min-h-screen container  mt-16 mx-auto">
         <div className="flex justify-between">
           {/* content div */}
@@ -240,6 +244,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
