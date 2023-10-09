@@ -1,8 +1,8 @@
 import React from "react";
 
 export type ServiceCardItemPropsType = {
-  header: string;
-  description: string;
+  header?: string;
+  description?: string;
 };
 
 const ServiceCardItem = (props: ServiceCardItemPropsType) => {

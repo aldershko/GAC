@@ -1,8 +1,13 @@
-import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { ServicesItemType } from "./HomePage";
 import ServiceCardItem from "./ServiceCardItem";
+
+export type ConsultingListItemType = {
+  id: number;
+  header?: string;
+  description?: string;
+};
 
 const ServicesPage = () => {
   const ServicesItemList: ServicesItemType[] = [
@@ -46,6 +51,47 @@ const ServicesPage = () => {
     },
   ];
 
+  const ConsultingList: ConsultingListItemType[] = [
+    {
+      id: 1,
+      header: "Risk Management",
+    },
+    {
+      id: 2,
+      header: "Process Management",
+    },
+    {
+      id: 3,
+      header: "Flexibility in Process Management",
+    },
+    {
+      id: 4,
+      header: "Operation System Review",
+    },
+    {
+      id: 5,
+
+      description:
+        "Collaboratively create an Integrated Management System Policy, objectives, procedures, and documentation to implement policies and objectives effectively",
+    },
+    {
+      id: 6,
+      header: "Integrated Management System Review",
+    },
+    {
+      id: 7,
+      header: "Inernal Audits",
+    },
+    {
+      id: 8,
+      header: "Management Review Meetings",
+    },
+    {
+      id: 9,
+      header: "Certification Audit Preparation",
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -83,6 +129,25 @@ const ServicesPage = () => {
         <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
           <div className="flex flex-wrap m-5  justify-center overflow-x-auto flex-row">
             {ServicesItemList.map((item) => {
+              return (
+                <ServiceCardItem
+                  key={item.id}
+                  header={item.header}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-gacRed">Structure</span>
+            <h1 className="text-gacBlue text-2xl mt-2 mb-5 font-semibold">
+              Our Consulting Structure
+            </h1>
+          </div>
+          <div className="flex flex-wrap m-5  justify-center overflow-x-auto flex-row">
+            {ConsultingList.map((item) => {
               return (
                 <ServiceCardItem
                   key={item.id}
