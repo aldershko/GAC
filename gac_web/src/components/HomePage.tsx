@@ -96,7 +96,7 @@ const HomePage = () => {
       <div className=" min-h-screen container  mt-16 mx-auto">
         <div className="flex justify-between">
           {/* content div */}
-          <div className=" flex ml-60 mt-10 object-cover w-full pl-10 py-10 font-bold tracking-widest leading-snug text-5xl flex-col justify-center align-middle">
+          <div className=" flex  mt-10 object-cover w-full pl-10 py-10 font-bold tracking-widest leading-snug text-5xl flex-col justify-center align-middle">
             {/* <img
               className="relative h-full w-full container "
               src={background}
@@ -130,7 +130,7 @@ const HomePage = () => {
           {/* <div className="w-611 h-611"><img src={home} alt="" /></div> */}
         </div>
 
-        <div className="flex justify-center w-full h-128 items-center flex-row">
+        <div className="flex justify-between px-40 w-full h-128 items-center flex-row">
           <div className="p-5  h-128 flex justify-center items-center w-128 m-5">
             <img
               src={closeup}
