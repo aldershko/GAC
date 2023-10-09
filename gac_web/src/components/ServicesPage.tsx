@@ -1,8 +1,51 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { ServicesItemType } from "./HomePage";
+import ServiceCardItem from "./ServiceCardItem";
 
 const ServicesPage = () => {
+  const ServicesItemList: ServicesItemType[] = [
+    {
+      id: 1,
+      header: "Quality Management System",
+      description:
+        "ISO 9001; ISO 17025; ISO 17020; TS 16949; ISO 13485; AS 9100; ISO 15189; ISO 17024",
+    },
+    {
+      id: 2,
+      header: "Environment and Occupational Health and Safety",
+      description:
+        "ISO 14001, ISO 45001, RC14001, IMS-Integrated management system",
+    },
+    {
+      id: 3,
+      header: "Laboratory And Hospitals And Testing Accreditation",
+      description: "ISO 17025",
+    },
+    {
+      id: 4,
+      header: "Information Security Related",
+      description: "ISO 27001, ISO 20000; CMMI",
+    },
+    {
+      id: 5,
+      header: "Asset Management",
+      description: "ISO 55000  ",
+    },
+    {
+      id: 6,
+      header: "Food Safety Management System",
+      description:
+        "ISO 22000; HACCP; BRC food; Fami-QS; FSSC 22000; Organic & Global GAP; Halal; Kausher",
+    },
+    {
+      id: 7,
+      header: "Social Accountability And Energy Management",
+      description: "SA 8000 , Sedex, ISO 50001",
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -37,7 +80,21 @@ const ServicesPage = () => {
           {/* img div */}
           {/* <div className="w-611 h-611"><img src={home} alt="" /></div> */}
         </div>
+        <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
+          <div className="flex flex-wrap m-5  justify-center overflow-x-auto flex-row">
+            {ServicesItemList.map((item) => {
+              return (
+                <ServiceCardItem
+                  key={item.id}
+                  header={item.header}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
+
       <Footer />
     </>
   );
