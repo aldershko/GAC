@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { ServicesItemType } from "./HomePage";
 import ServiceCardItem from "./ServiceCardItem";
+import Approach from "./Approach";
 
 export type ConsultingListItemType = {
   id: number;
@@ -157,6 +158,14 @@ const ServicesPage = () => {
               );
             })}
           </div>
+        </div>
+        <div className="mt-5 w-full p-5 items-center mb-10 flex flex-col">
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-gacBlue text-2xl mt-2 mb-5 font-semibold">
+              Approach
+            </h1>
+          </div>
+          <Approach />
         </div>
       </div>
 

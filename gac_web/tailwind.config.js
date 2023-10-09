@@ -7,10 +7,12 @@ export default {
         full_15: "115%",
       },
       height: {
+        112: "27rem",
         128: "32rem",
         611: "39rem",
       },
       width: {
+        112: "27rem",
         128: "32rem",
         611: "39rem",
       },
