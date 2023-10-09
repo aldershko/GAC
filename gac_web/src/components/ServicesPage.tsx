@@ -21,12 +21,12 @@ const ServicesPage = () => {
               </div>
               <div className="flex flex-col justify-between w-611">
                 <h1 className="text-black mt-5 font-medium tracking-normal leading-normal text-lg">
-                  At [Your Company Name], we're dedicated to delivering
-                  top-notch [Service Category] services that exceed your
-                  expectations. With years of experience and a commitment to
-                  excellence, we've become a trusted partner for individuals and
-                  businesses alike. Whether you're looking to [briefly mention
-                  the main services you offer], we've got you covered.
+                  At GAC, we're dedicated to delivering top-notch services that
+                  exceed your expectations. With years of experience and a
+                  commitment to excellence, we've become a trusted partner for
+                  individuals and businesses alike. Whether you're looking for
+                  Quality Management, Asset Management, Information Security,
+                  we've got you covered.
                 </h1>
                 <button className=" w-44 mt-10 p-4  bg-red-500 text-white text-base font-medium">
                   Contact Us
